@@ -2,7 +2,7 @@
 
 The SWAN-SF dataset is a multivariate time series dataset designed for classifying solar flares into five categories: X, M, C, B, and FQ. It consists of five partitions, with a total volume exceeding 5 gigabytes, making it quite large in size. Each sample within the dataset has 24 unique attributes and a sequence length of 60, contributing to its high dimensionality. The current methodology for time series slicing in the SWAN-SF dataset involves using a sliding window with steps of 1 hour, where each slice has an observation period of 12 hours and a prediction span of 24 hours. Within this framework, each multivariate time series slice is assigned a category based on the most intense solar flare observed during its corresponding prediction window. For our analysis, we utilize only the first two partitions, which together comprise approximately 150,000 samples. However, this dataset presents significant challenges. These include class imbalance, multi-scaled attributes, missing values, and class overlap, all of which make achieving high classification performance particularly difficult. To simplify the task, we group the FQ, B, and C classes as “minor-flaring” and the M and X classes as “major-flaring,” transforming the classification task into a binary classification problem, distinguishing between minor- and major-flaring samples.
 
-**PROJECT OBJECTIVES:**
+### PROJECT OBJECTIVES:
 
 1. The first step is to load the SWAN-SF dataset by iterating through each file, converting the data into pickle format. The dataset will then be split and saved into two files: one for the data and another for the binary labels associated with each sample. 
 
@@ -24,3 +24,10 @@ Before you start, make sure you have the following:
 
 - **SWAN-SF Dataset**: Download it from [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/EBCFKM).
 - **Python Packages**: Ensure you have these packages installed: `pandas`, `numpy`, `matplotlib`, `seaborn`, `tensorflow`, `tqdm`, `pickle`, `sklearn`, `scipy`, `imblearn`. The code for `timegan` is included in the repository, so no additional installation is required for this package.
+
+  
+### Execution
+
+1. Open the Jupyter Notebook and run the code sequentially.
+2. Download the dataset and unzip it. This will create five partitions organized into five folders named `partition1` to `partition5`.
+3. Update the `data_dir` variable in the code to reflect the correct directory path on your system.
