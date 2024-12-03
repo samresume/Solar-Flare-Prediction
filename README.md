@@ -12,9 +12,9 @@ The SWAN-SF dataset is a multivariate time series dataset designed for classifyi
 
 4. In addition, statistical feature engineering and deep learning-based feature selection methods will be compared to determine which approach yields better classification accuracy. Several classifiers, including SVM, k-NN, GRU, and LSTM, will be used to evaluate which model performs best on the SWAN-SF dataset.
 
-Box plots and bar charts will be used to visualize and assess the experimental results. The True Skill Statistic (TSS) will serve as the evaluation metric, as conventional metrics such as accuracy and F1-score are not appropriate for imbalanced datasets.
-
 5. Data distribution analysis, and correlation analysis will be conducted to provide deeper insights into the dataset.
+
+Box plots and bar charts will be used to visualize and assess the experimental results. The True Skill Statistic (TSS) will serve as the evaluation metric, as conventional metrics such as accuracy and F1-score are not appropriate for imbalanced datasets.
 
 
 
