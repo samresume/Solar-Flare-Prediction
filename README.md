@@ -17,6 +17,8 @@ The SWAN-SF dataset is a multivariate time series dataset designed for classifyi
 Box plots and bar charts will be used to visualize and assess the experimental results. The True Skill Statistic (TSS) will serve as the evaluation metric, as conventional metrics such as accuracy and F1-score are not appropriate for imbalanced datasets.
 
 
+<img src="classifiers_box.svg" width="600" alt="Solar Flare Prediction Results" title="Solar Flare Prediction Results">
+
 
 ### Prerequisites
 
